@@ -10,8 +10,9 @@ exports.adapter = serveHttp([
 function adapter(req,res,params)
 {
 
-    let adapterOption = {
-        uri: 'http://localhost:52673/' + params.router,
+    let adapterOption = {    
+        uri: 'http://35.194.157.51/DemoApi/' + params.router,
+        // uri: 'http://localhost:52673/' + params.router,
         method: 'POST',
         json: params
     };
